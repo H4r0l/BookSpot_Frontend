@@ -1,4 +1,5 @@
 import React from "react";
+import divider from '../assets/waves.svg'
 import {
   Drawer,
   Button,
@@ -18,12 +19,13 @@ export function DrawerWithNavigation() {
 
   return (
     <React.Fragment>
-      <Button
-        onClick={openDrawer}
-        className="place-content-center text-[#B0DCE8] justify-self-center"
-      >
-        BookSpot
-      </Button>
+
+        <Button
+          onClick={openDrawer}
+          className="  text-[#B0DCE8] justify-self-center"
+        >
+          BookSpot
+        </Button>
       <Drawer open={open} onClose={closeDrawer}>
         <div className="mb-2 flex items-center justify-between p-4">
           <Typography variant="h5" color="blue-gray">
