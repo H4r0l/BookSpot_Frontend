@@ -23,6 +23,10 @@ const AuthModal = ({ closeModal }) => {
     setShowLogin(true);
   };
 
+  const handleSignUp = () => {
+    setShowLogin(false);
+  };
+
   const handleLogout = () => {
     dispatch(setUnauthenticated());
     localStorage.removeItem("token");
@@ -46,14 +50,14 @@ const AuthModal = ({ closeModal }) => {
           className="mb-4 grid h-28 place-items-center"
         >
           <Typography variant="h3" color="white">
-            {showLogin ? "Sign In" : "Sign Out"}
+            {showLogin ? "Sign In" : "Sign Up"}
           </Typography>
         </CardHeader>
         <CardBody className="flex flex-col gap-4">
           {showLogin ? (
             <Login onSuccess={handleLoginSuccess} />
           ) : (
-            <Logout onLogout={handleLogout} />
+            <SignUp onSuccess={handleLoginSuccess} />
           )}
         </CardBody>
         <CardFooter className="pt-0">
@@ -70,6 +74,7 @@ const AuthModal = ({ closeModal }) => {
                   variant="small"
                   color="blue-gray"
                   className="ml-1 font-bold"
+                  onClick={handleSignUp}
                 >
                   Sign up
                 </Typography>
@@ -92,3 +97,4 @@ const AuthModal = ({ closeModal }) => {
 };
 
 export default AuthModal;
+    
