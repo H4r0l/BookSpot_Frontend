@@ -1,12 +1,11 @@
 const Navbar = () => {
-    <>
-      <nav className="navbar navbar-toggle bg-dark d-flex align-content-between text-dark" id="">
-        <div className="badge text-color-primary text-wrap">
-          Navbar
-        </div>
-      </nav>
-
-    </>
+    return (
+        <>
+            <nav className="navbar navbar-toggle bg-dark text-light fw-bold mx-auto p-2" id="">
+                Navbar
+            </nav>
+        </>
+    )
 }
 
 export default Navbar
