@@ -5,14 +5,10 @@ function App() {
   return (
     <>
     <Navbar/>
-
-      <div className="" id="sidebar">
-        <div className="p-4 justify-content-center flex-column">
-            <h1>Main Content</h1>
-            <p>This is the main content area.</p>
+        <div className="flex flex-col gap-5 p-6">
+            Hoal
         </div>
-      </div >
-    </>
+      </>
   )
 }
 
