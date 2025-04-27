@@ -1,4 +1,17 @@
+/* custom.scss */
+@import 'tailwindcss';
+
+/* Custom styles below */
+.custom-font {
+  font-family: 'Inter', 'Inter Fallback', sans-serif;
+}
+
 #sidebar {
   height: 100vh;
 }
 
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
